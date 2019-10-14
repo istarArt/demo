@@ -387,10 +387,10 @@ html {
     
     
   .container .coins {
-    width: 1448px;
-    height: 800px;
+    width: 1385px;
+    height: 728px;
     margin-left: -27%;
-    margin-top: -21%;
+    margin-top: -15%;
     position: absolute;
     top: 0;
     background: url(../images/leftImg.png) no-repeat;
