@@ -1,0 +1,451 @@
+$text-box-bgc:#f3a4b5;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    overflow: inherit;
+}
+
+label {
+    position: relative;
+}
+
+body {
+    line-height: 1;
+}
+
+h1,
+p,
+button,
+input,
+a {
+    font-family: Microsoft JhengHei;
+}
+
+ul,
+li,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 1200px;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+
+        .inner {
+            position: relative;
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: auto;
+
+            .left-area {
+                width: 865px;
+                position: fixed;
+                margin: 0 0 10px 0;
+                bottom: 0px;
+
+                .title {
+                    margin-bottom: 58px;
+                    h1 {
+                        font-size: 28px;
+                        font-weight: bolder;
+                        letter-spacing: 0.02em;
+                        position: relative;
+                        line-height: 24px;
+                        padding: 0 0 0 70px;
+                        &::before {
+                            content: "";
+                            background: url('../images/logo.png') no-repeat;
+                            width: 52px;
+                            height: 65px;
+                            position: absolute;
+                            left: 0px;
+                            top: -16px;
+                        }
+                    }
+                }
+                nav {
+                    width: 560px;
+                    height: 30px;
+                    .menu1, .menu2, .menu3 {
+                        background: #007a9a;
+                        color: #fff;
+                        border-radius: 15px 15px 0 0;
+                        padding: 10px 15px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        &:hover, &:active ,&.active {
+                            color: #000;
+                            background: #fff;
+                            font-weight: bold;
+                        }
+                    }
+                    .menu2 {}
+                    .menu3 {}
+                }          
+                .content {
+                    background: #fff;
+                    height: calc(100vh - 160px);
+                    max-height: 870px;
+                    overflow: auto;
+                    padding: 50px;
+                    .page1 {
+                        background: url('../images/page1.jpg') no-repeat;
+                        width: 750px;
+                        height: 939px;
+                    }
+                    .page2 {
+                        background: url('../images/page2.jpg') no-repeat;
+                        width: 793px;
+                        height: 1116px;
+                    }
+                    .page3 {
+                        background: url('../images/page3.jpg') no-repeat;
+                        width: 778px;
+                        height: 1253px;
+                    }
+                    p {
+                        font-size: 1em;
+                        letter-spacing: 0.05em;
+                        font-weight: bolder;
+                    }
+    
+                    .subtitle {
+                        font-family: Microsoft JhengHei;
+                        font-size: 1.3em;
+                        letter-spacing: 0.05em;
+                        font-weight: bolder;
+                        margin-bottom: 3%;
+                    }
+    
+                    .subtitle:before {
+                        content: "";
+                        display: inline-block;
+                        background: url(../images/subtitle.png)no-repeat;
+                        background-size: cover;
+                        width: 31px;
+                        height: 25px;
+                        margin-right: 1.5%;
+    
+                    }
+    
+                    .step1-img {
+                        display: inline-block;
+                        background: url(../images/step1.png)no-repeat;
+                        background-size: cover;
+                        width: 700px;
+                        height: 374px;
+                    }
+    
+                    .step1-icon {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 2%;
+                        margin-bottom: 4%;
+                    }
+    
+                    .step1-icon:before {
+                        display: inline-block;
+                        content: "";
+                        background: url(../images/step1-icon.png)no-repeat;
+                        background-size: cover;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 1.8%;
+                    }
+    
+                    .step2-img {
+                        display: inline-block;
+                        background: url(../images/step2.png)no-repeat;
+                        background-size: cover;
+                        width: 700px;
+                        height: 374px;
+                    }
+    
+                    .step2-icon {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+    
+                    }
+    
+                    .step2-icon:before {
+                        display: inline-block;
+                        content: "";
+                        background: url(../images/step2-icon.png)no-repeat;
+                        background-size: cover;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 1.8%;
+                    }
+    
+                    .step3-icon {
+                        display: flex;
+                        align-items: center;
+    
+                    }
+    
+                    .step3-icon:before {
+                        display: inline-block;
+                        content: "";
+                        background: url(../images/step3-icon.png)no-repeat;
+                        background-size: cover;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 1.8%;
+                    }
+                }
+            }
+
+            
+        }
+
+        .right-area {
+            width: 370px;
+            position: fixed;
+            bottom: -30px;
+            margin: 0 0 0 835px;
+
+            .right-area-box {
+                .text-box {
+                    width: 240px;
+                    height: 260px;
+                    background-color: $text-box-bgc;
+                    border-radius: 25px 25px 25px 25px;
+                    -moz-border-radius: 25px 25px 25px 25px;
+                    -webkit-border-radius: 25px 25px 25px 25px;
+                    border: 0px solid #000000;
+                    margin: 0 0 0 60px;
+
+                    div {
+                        font-family: Microsoft JhengHei;
+                    }
+
+                    .title {
+                        font-family: Microsoft JhengHei;
+                        font-size: 1.3em;
+                        letter-spacing: 0.05em;
+                        font-weight: bolder;
+                        padding: 20px 0 0 20px;
+                        margin: 0 0 20px 0;
+                        height: 46px;
+                    }
+
+                    .title:before {
+                        content: "";
+                        display: inline-block;
+                        background: url(../images/text-box-user.png)no-repeat;
+                        background-size: cover;
+                        width: 28px;
+                        height: 20px;
+                        margin-right: 7px;
+                    }
+
+                    .text-box-step1,
+                    .text-box-step2 {
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        display: flex;
+                        position: relative;
+
+                        p {
+                            width: 172px;
+                            line-height: 20px;
+                            margin: 0 0 10px 52px;
+                        }
+                    }
+
+                    .text-box-step1:before,
+                    .text-box-step2:before {
+                        content: "";
+                        position: absolute;
+                        display: inline-block;
+                        background: url(../images/text-box-step1-icon.png)no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        left: 20px;
+                    }
+
+                    .text-box-step2:before {
+                        background: url(../images/text-box-step2-icon.png)no-repeat;
+                    }
+
+                    .text-box-inner {
+                        display: flex;
+                        flex-wrap: wrap;
+
+
+
+                    }
+                }
+
+                .text-box:after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 20px 20px 0 0;
+                    border-color: $text-box-bgc transparent transparent transparent;
+                    top: 348px;
+                    right: 90px;
+                }
+
+                //text-box
+                .Bunny-girl {
+                    background: url(../images/bunny-girl.png)no-repeat;
+                    background-size: cover;
+                    width: 340px;
+                    height: 394px;
+                    margin: 3% 0 0 35px;
+                }
+            }
+
+        }
+
+        //right-area
+    }
+
+    //inner
+}
+
+
+
+.BG {
+    position: absolute;
+    background: url(../images/BG.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    top: 0;
+}
+
+//content
+
+
+
+/*RWD-area*/
