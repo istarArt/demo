@@ -1,0 +1,415 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+textarea,
+button,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="password"],
+.input-checkbox {
+  font-family: Microsoft JhengHei;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+::-webkit-input-placeholder {
+  color: #fff; }
+
+:-moz-placeholder {
+  color: #fff; }
+
+::-moz-placeholder {
+  color: #fff; }
+
+:-ms-input-placeholder {
+  color: #fff; }
+
+@-webkit-keyframes simple {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes simple {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@-webkit-keyframes balls {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0) rotate(360deg);
+    transform: scale(0, 0) rotate(360deg); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg); } }
+
+@keyframes balls {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0) rotate(360deg);
+    transform: scale(0, 0) rotate(360deg); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg); } }
+
+@-webkit-keyframes balls_flash {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes balls_flash {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes coins {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2) translateY(-50%);
+    transform: scale(0.2, 0.2) translateY(-50%); }
+  55% {
+    -webkit-transform: scale(1, 1) translateY(5%);
+    transform: scale(1, 1) translateY(5%); }
+  70% {
+    -webkit-transform: scale(1, 1) translateY(0%);
+    transform: scale(1, 1) translateY(0%); }
+  85% {
+    -webkit-transform: scale(1, 1) translateY(5%);
+    transform: scale(1, 1) translateY(5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) translateY(0%);
+    transform: scale(1, 1) translateY(0%); } }
+
+@keyframes coins {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2) translateY(-50%);
+    transform: scale(0.2, 0.2) translateY(-50%); }
+  55% {
+    -webkit-transform: scale(1, 1) translateY(5%);
+    transform: scale(1, 1) translateY(5%); }
+  70% {
+    -webkit-transform: scale(1, 1) translateY(0%);
+    transform: scale(1, 1) translateY(0%); }
+  85% {
+    -webkit-transform: scale(1, 1) translateY(5%);
+    transform: scale(1, 1) translateY(5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) translateY(0%);
+    transform: scale(1, 1) translateY(0%); } }
+
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    opacity: 1; } }
+
+@keyframes showUp {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    opacity: 1; } }
+
+html {
+  font-family: '微軟正黑體', Microsoft JhengHei;
+  background: #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 1100px;
+  height: 100%;
+  overflow-y: hidden; }
+
+.container {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 1050px;
+  height: 1000px;
+  overflow: auto; }
+
+.container section {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.container section .top {
+  position: fixed;
+  top: 0px;
+}
+
+.container section .logo {
+  background: url('../images/logo.png') no-repeat;
+  width: 654px;
+  height: 211px;
+  position: relative;
+  margin: 30px 0 0 140px;
+}
+
+.container section .logo:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 242px 800px 0 230px;
+  border-color: #10263e transparent transparent transparent;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -134px;
+}
+
+.container section article {
+  /* background: orangered; */
+  width: 100%;
+  padding: 30px;
+  margin: 200px 0 100px 0;
+  font-size: 17px;
+}
+
+.container section article section p, .container section article section span {
+  display: block;
+}
+.container section article section span { font-weight: bold; font-size: 18px; padding: 0 0 50px 0;}
+.container section article section p { line-height: 25px; padding: 0 0 30px 0;}
+.container section article section p.tip { font-style:italic;}
+
+.container section article section div {
+  position: relative;
+  z-index: -2;
+}
+
+.container section article section div::after {
+  position: absolute;
+  font-weight: bold;
+}
+
+.container section article .sec1 div {
+  background: url('../images/section_1.png') no-repeat;
+  width: 604px;
+  height: 447px;
+  margin: 0 auto;
+}
+.container section article .sec1 p {
+  width: 740px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 0 80px 0;
+  font-size: 17px;
+}
+
+.container section article .sec2 { height: 1150px; width: 670px;}
+.container section article .sec2 div {
+  background: url('../images/section_2.jpg') no-repeat;
+  width: 491px;
+  height: 643px;
+  margin: 0 auto;
+}
+
+.container section article .sec2 div::after {
+  content: "（圖1.證照展示）";
+  top: 650px;
+  left: 170px;
+}
+
+.container section article .sec2 span, .container section article .sec7 span {
+  margin: 60px 0 0px 0;
+}
+
+.container section article .sec3 { height: 750px; width: 880px;}
+.container section article .sec3 div {
+  background: url('../images/section_3.jpg') no-repeat;
+  width: 840px;
+  height: 622px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 7px 4px rgba(16, 38, 62, 0.5);
+}
+
+.container section article .sec3 div::after {
+  content: "（圖2.簡易明瞭的投注介面，讓玩家很短時間內在即可找到要投注的盤口）";
+  top: 650px;
+  left: 140px;
+}
+
+.container section article .sec4 { height: 750px; width: 880px;}
+.container section article .sec4 div {
+  background: url('../images/section_4.jpg') no-repeat;
+  width: 840px;
+  height: 622px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 7px 4px rgba(16, 38, 62, 0.5);
+}
+
+.container section article .sec4 div::after {
+  content: "（圖3.多種投注選擇一目了然）";
+  top: 650px;
+  left: 295px;
+}
+
+.container section article .sec5, .container section article .sec6 { height: 700px; width: 880px;}
+.container section article .sec5 div {
+  background: url('../images/section_5.jpg') no-repeat;
+  width: 840px;
+  height: 584px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 7px 4px rgba(16, 38, 62, 0.5);
+}
+
+.container section article .sec5 div::after {
+  content: "（圖4-1.直播賽事服務，隨選隨看。）";
+  top: 615px;
+  left: 263px;
+}
+
+.container section article .sec6 div { 
+  background: url('../images/section_6.jpg') no-repeat;  
+  width: 839px;
+  height: 558px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 7px 4px rgba(16, 38, 62, 0.5); 
+}
+.container section article .sec6 div::after { 
+  content: "（圖4-2.直播賽事服務，隨選隨看。）";
+  top: 595px;
+  left: 263px;
+}
+
+.container section article .sec7 { height: 870px; width: 860px;}
+.container section article .sec7 div {
+  background: url('../images/section_7.png') no-repeat;
+  width: 860px;
+  height: 491px;
+  margin: 0 auto;
+  padding: 0px 0 100px 0;
+}
+
+.container section article .sec7 div::after {
+  content: "（圖5.手持式裝置直覺式介面，快速上手無負擔。）";
+  top: 505px;
+  left: 225px;
+}
+
+.container section article .sec7 span, .container section article .sec7 p {
+  width: 670px;
+  margin: 0 auto;
+}
+
+.container .BG {
+  position: fixed;
+  top: 0;
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size: auto;
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
+  z-index: -999; }
+
+.clear {
+  clear: both; }
+
