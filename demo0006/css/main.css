@@ -105,21 +105,20 @@ button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+        margin: 0 50px; }
         .container .inner .part3 .top-box .box-img {
           background: url(../images/part-3-1.png) no-repeat;
           background-size: contain;
           width: 608px;
-          height: 477px;
-          margin-left: 50px; }
+          height: 477px; }
         .container .inner .part3 .top-box .p2 {
-          margin-left: 10px;
           letter-spacing: 0.8px;
           font-weight: 500;
           line-height: initial; }
@@ -128,15 +127,14 @@ button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
         .container .inner .part3 .bottom-box .p3 {
-          margin-left: 50px;
           letter-spacing: 0.4px;
           font-weight: 500;
           line-height: initial; }
