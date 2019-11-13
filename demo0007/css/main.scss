@@ -52,6 +52,7 @@
 
   $inner-bgc:#ffffffcc;
   $part7-color:#a40000;
+  $all-font-family:Microsoft JhengHei;
 
   .container{
     width: 100%;
@@ -87,25 +88,26 @@
             .title-img1{
                 display: flex;
                 width: 90%;
-                height: 322px;
+                padding: 15%;
                 background: url(../images/part-1.png) no-repeat;
                 background-size: contain;
             }
         }//part1
         .p1{
-            margin: 25px 50px;
+            margin: 25px 50px 50px 50px;
             letter-spacing: 0.3px;
             line-height: 25px;
         }
         .part2{
             display: flex;
             width: 100%;
-            height: 985px;
+            padding: 50%;
             background: url(../images/part-2.png) no-repeat;
             background-size: contain;
         }
         .part3{
             width: 100%;
+            position: relative;
             .top-box{
                 display: flex;
                 -webkit-box-orient: vertical;
@@ -115,22 +117,44 @@
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
-                margin: 0 50px;
+                margin: -13% 50px 0 50px;
+                .title{
+                    color:$part7-color;
+                    font-size: 21px;
+                    font-weight: bolder;
+                    font-family: $all-font-family;
+                    display: flex;
+                    margin-bottom: 5%;
+                }
                 .box-img{
-                    background: url(../images/part-3-1.png) no-repeat;
+                    background: url(../images/part-3-1.jpg) no-repeat;
                     background-size: contain;
-                    width: 608px;
-                    height: 477px;
+                    width: 96%;
+                }
+                .box-img:after{
+                    content:"(圖2.簡易明瞭的投注介面，讓玩家很短時間內在即可找到要投注的盤口)";
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    margin-top: 75%;
+                    font-family: $all-font-family;
+                    color: #444444;
                 }
                 .p2{
                     letter-spacing: 0.8px;
                     font-weight: 500;
                     line-height: initial;
+                    margin-bottom: 30px;
+                }
+                .p3{
+                    letter-spacing: 0.4px;
+                    font-weight: 500;
+                    line-height: initial;
+                    margin-bottom: 50px;
                 }
             }//top-box
 
             .bottom-box{
-                margin-top: 50px;
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
@@ -139,18 +163,26 @@
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
-                .p3{
-                    letter-spacing: 0.4px;
-                    font-weight: 500;
-                    line-height: initial;
-                }
+                margin: 50px;
+                
                 .box-img{
-                    background: url(../images/part-3-2.png) no-repeat;
+                    background: url(../images/part-3-2.jpg) no-repeat;
                     background-size: contain;
-                    width: 608px;
-                    height: 477px;
+                    width: 96%;
+                }
+                .box-img:after{
+                    content:"(圖3.多種投注選擇一目瞭然)";
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    margin-top: 75%;
+                    font-family: $all-font-family;
+                    color: #444444;
                 }
             }//bottom-box
+            .box-img{
+                margin-bottom: 50px;
+            }
         }//part3
         .part4{
             margin-top: 50px;
@@ -160,29 +192,64 @@
             height: 287px;
         }
         .part5{
-            display: none;
-            width: 100%;
-            margin-top: 50px;
-            margin-left: 50px;
-            background: url(../images/part-5.png) no-repeat;
-            background-size: contain;
-            width: 1050px;
-            height: 368px;
+            margin:50px 0 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div:nth-child(1){
+                background: url(../images/part-5-1.jpg) no-repeat;
+                background-size: contain;
+                width: 90%;
+                margin-bottom: 100px;
+            }
+            div:nth-child(1):after{
+                    content:"(圖4-1.直播賽事服務，隨選隨看)";
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    margin-top: 68%;
+                    font-family: $all-font-family;
+                    color: #444444;
+            }
+            div:nth-child(2){
+                background: url(../images/part-5-2.jpg) no-repeat;
+                background-size: contain;
+                width: 90%;
+            }
+            div:nth-child(2):after{
+                content:"(圖4-2.直播賽事服務，隨選隨看)";
+                display: flex;
+                position: relative;
+                justify-content: center;
+                margin-top: 72%;
+                font-family: $all-font-family;
+                color: #444444;
+        }
         }
         .part6{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            background: url(../images/part-6.png) no-repeat;
-            background-size: contain;
-            width: 100%;
-            height: 719px;
-
+           margin:50px 0;
+            div{
+                background: url(../images/part-6.png) no-repeat;
+                background-size: contain;
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            div:before{
+                content:"(圖5.手持式裝置直覺式頁面，快速上手無負擔。)";
+                display: flex;
+                position: relative;
+                justify-content: center;
+                margin-top: 66%;
+                font-family: $all-font-family;
+                color: #444444;
+            }
         }
+        
         .part7{
             display: flex;
             flex-wrap: wrap;
-            margin-left: 50px;
-            margin-bottom: 50px;
+            margin: 0 50px 100px 50px;
             
             .title{
                 width: 100%;
@@ -245,5 +312,12 @@
 {
     .container .inner{
        width: 1100px;
+    }
+}
+
+@media screen and(max-width:1100px)
+{
+    .container .inner .part2{
+        max-height: 100%;
     }
 }
